@@ -1,0 +1,105 @@
+.test
+   padding: 60px 0
+   &-form
+      padding: 40px 40px
+      width: 970px
+      border-radius: 5px
+      box-shadow: $main-shadow
+      margin: 0 auto
+      position: relative
+      &_posr
+         position: relative
+      &_posr:hover .test-form_letter
+         color: #fff
+         z-index: 1
+      &_letter
+         position: absolute
+         top: 50%
+         left: 15px
+         transform: translateY(-50%)
+         font-weight: 600
+      &_deleteTest
+         display: block
+         margin: 0 auto
+         margin-top: 5px
+      &_rebootTest
+         color: $main-blue
+         font-weight: 600
+         display: block
+         margin: 0 auto
+         margin-top: 30px
+      &_question
+         font-size: 18px
+         margin-bottom: 30px
+         line-height: 22px
+      &_answer
+         font-size: 16px
+         line-height: 22px
+         padding-left: 25px
+         position: relative
+         margin-top: 4px
+         & img
+            width: 15px
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            position: absolute
+      &_title
+         line-height: 1.2
+         font-size: 24px
+         text-align: center
+         margin-bottom: 30px
+      &_option
+         position: relative
+         text-align: center
+         cursor: pointer
+         display: flex
+         justify-content: center
+         align-items: center
+         padding: 10px 40px
+         height: 70px
+         margin-bottom: 20px
+         width: 100%
+         border: 2px solid rgba(0,0,0,0.7)
+         border-radius: 5px
+         &:hover, &:focus, &:hover 
+            background-color: rgba($main-blue,0.8)
+            border: 2px solid #EDEFF4
+            color: #ffffff
+         &:active
+            background-color: $main-blue
+      &_counter
+         position: absolute
+         left: 50%
+         transform: translateX(-50%)
+         top: 15px
+         font-weight: 600
+      &_completeTitle
+         font-size: 26px
+      &_completeImg
+         position: absolute
+         left: -30px
+         top: 50%
+         transform: translateY(-50%)
+      &_completeCorrect
+         display: inline-block
+         position: relative
+         font-size: 16px
+         margin-top: 30px
+         margin-bottom: 50px
+      &_completeAnswers
+         color: $main-blue
+         margin-top: 30px
+         font-weight: 600
+         text-align: center
+.emptyTest
+   color: #333
+   font-size: 20px
+   text-align: center
+.backToArticle
+   margin-top: 10px
+   display: inline-block
+   color: $main-blue
+   font-weight: 600
+   text-align: center
+

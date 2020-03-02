@@ -1,0 +1,102 @@
+@import 'reset'
+@import 'vars'
+@import 'mixins'
+@import 'articles'
+@import 'auth'
+@import 'header'
+@import 'loader'
+@import 'article'
+@import 'constructor'
+@import 'testConstructor'
+@import 'test'
+@import 'profile'
+
+input:focus, a:focus, button:focus, select:focus
+   box-shadow: 0 0 0 2px $main-blue;
+
+body
+   font-family: 'Open Sans', sans-serif
+   font-size: 16px
+   min-width: 1200px
+   overflow-x: hidden
+   color: #222
+   
+a 
+   font-family: 'Open Sans', sans-serif
+   text-decoration: none
+   color: #222
+   display: block
+b
+   font-weight: 600
+i
+   font-style: italic
+button
+   border: 0
+   padding: 0
+   cursor: pointer
+   background: none
+button.primary
+   @include primary-button
+input,button, textarea
+   font-size: 16px
+   font-family: 'Open Sans'
+
+input, textarea
+   border-radius: 5px
+   padding: 10px 15px
+input, label, textarea, select
+   font-family: 'Open Sans', sans-serif;
+   display: block
+select
+   font-size: 14px
+   font-weight: 600
+font[size="4"]
+   display: block
+   margin-bottom: 15px
+.container
+   width: 1200px
+   margin: 0 auto
+   padding: 0 15px
+
+.title
+   font-family: 'Fira Sans', sans-serif
+.required,.error,.danger
+   font-weight: 600
+   color: $danger
+.green
+   color: $green
+.gray
+   color: #8A8888
+.center
+   text-align: center
+.posr
+   position: relative
+::-webkit-scrollbar 
+   width: 10px
+
+
+/* Track */
+::-webkit-scrollbar-track 
+   background: lighten(#000, 40%)
+
+
+/* Handle */
+::-webkit-scrollbar-thumb
+   background: lighten($main-blue, 10%)
+   border-radius: 5px
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+   background: lighten($main-blue, 5%)
+
+label
+   font-weight: 600
+   margin-bottom: 6px
+input, select
+   border-radius: 5px
+   padding: 0 10px
+   width: 100%
+   height: 40px
+   border: 2px solid rgba(0,0,0,0.7)
+   margin-bottom: 20px

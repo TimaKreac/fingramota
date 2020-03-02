@@ -1,0 +1,39 @@
+.header
+   background-color: $main-blue
+   position: relative
+   z-index: 1
+   &-inner
+      height: 100px
+      display: flex
+      align-items: center
+      justify-content: space-between
+   &-logo
+      height: 55px
+      cursor: pointer
+   &-profileLink
+      color: #fff
+      display: inline-block
+      margin-right: 60px
+   &-enterBtn
+      background: none
+      cursor: pointer
+      color: #fff
+      position: relative
+      &:hover
+         &:before
+            animation: exit 1.2s infinite linear forwards
+      &:before
+         content: ''
+         width: 19px
+         height: 19px
+         position: absolute
+         background-image: url('/images/logout.svg')
+         background-repeat: no-repeat
+         left: -24px
+         top: 50%
+         transform: translateY(-50%)
+@keyframes exit
+   0%
+      left: -30px
+   100%
+      left: -24px
